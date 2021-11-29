@@ -53,6 +53,9 @@ Explorateur de fichier : C:\Users\floma\Documents\docker\backupnginx
 On crée un fichier index.thml et on refresh la page 
 
 ## Création d'une image avec nodejs
+
+Dispo ici : https://hub.docker.com/r/florianbonhomme/node-bonhomme
+
 1. On crée un Dockerfile
 
 ```dockerfile
@@ -80,8 +83,15 @@ CMD ["node","index.js"]
 5. Pour run depuis un autre poste
 
     docker run -d  -p 3000:3000 florianbonhomme/node-bonhomme
+    
 
 # Creation de d'un docker-compose pour un projet Springboot et MongoDB
+
+Florian BONHOMME
+
+29/11/2021
+
+Dispo ici : https://hub.docker.com/r/florianbonhomme/bigdata-bonhomme
 
 ## Création du projet 
 Dans le cadre du déploiement automatisé on à crée un projet SpringBoot avec les dépendances Web et MongoDB pour pouvoir créer un API Rest basique qui renvoit des produits stockés dans une base de donnée MongoDB.
