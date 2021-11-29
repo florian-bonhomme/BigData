@@ -96,7 +96,7 @@ Dispo ici : https://hub.docker.com/r/florianbonhomme/bigdata-bonhomme
 ## Création du projet 
 Dans le cadre du déploiement automatisé on à crée un projet SpringBoot avec les dépendances Web et MongoDB pour pouvoir créer un API Rest basique qui renvoit des produits stockés dans une base de donnée MongoDB.
 
-Ce projet est assez simple, une entitée Produit avec des champs basiques de cette façon :
+1. On définie une entitée Produit avec des champs basiques de cette façon :
 ```java
 @Document(collection = "produit")
 public class Produit implements Serializable {
@@ -146,7 +146,7 @@ public class Produit implements Serializable {
 
 Où on map les champs en fonction de Mongo.
 
-On à aussi une repository pour requêter la base de donnée : 
+2. Repository pour requêter la base de donnée : 
 
 ```java 
 @Repository
@@ -156,7 +156,7 @@ public interface ProduitRepository extends MongoRepository<Produit, String> {
 
 ```
 
-Et enfin un Controller rest :
+3. Controller rest :
 
 ```java
 @RestController
