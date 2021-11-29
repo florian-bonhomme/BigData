@@ -216,7 +216,7 @@ services:
     ports:
       - 27017:27017
   mongo-api:
-    image: stygrab/mongo-api
+    image: florianbonhomme/bigdata-bonhomme
     ports:
       - 9091:8080
     links:
